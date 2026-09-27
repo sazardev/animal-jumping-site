@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Animal Jumping - Party Royale</title>
+    <meta
+      name="description"
+      content="Animal Jumping: el party royale más tierno. 24 animales, 30 rondas, 7 modos de fiesta, bots, salas en línea con amigos. Android, PC y navegador."
+    />
+    <meta property="og:title" content="Animal Jumping - Party Royale" />
+    <meta property="og:description" content="24 animales, 30 rondas, 7 modos. ¡A saltar!" />
+    <meta property="og:image" content="assets/img/candy-peak-9.webp" />
+    <meta name="theme-color" content="#FF6B35" />
+    <link rel="icon" href="assets/img/animal-fox.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sunburst" aria-hidden="true"></div>
+    <div class="clouds" aria-hidden="true">
+      <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+      <span class="cloud c4"></span>
+    </div>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav-logo" href="#top" aria-label="Animal Jumping">
+        <img src="assets/img/animal-fox.webp" alt="" width="44" height="44" />
+        <span>Animal Jumping</span>
+      </a>
+      <div class="nav-links">
+        <a href="#modos" data-i18n="nav.modes">Modos</a>
+        <a href="#rondas" data-i18n="nav.rounds">Rondas</a>
+        <a href="#animales" data-i18n="nav.animals">Animales</a>
+        <a href="#videos" data-i18n="nav.videos">Videos</a>
+        <a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a>
+      </div>
+      <button class="lang" id="lang" type="button" aria-label="Language / Idioma">EN</button>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="hero-copy">
+        <p class="kicker" data-i18n="hero.kicker">Party royale en 3D · Android · PC · Web</p>
+        <h1 class="title" aria-label="Animal Jumping">
+          <span class="word"
+            ><b>A</b><b>n</b><b>i</b><b>m</b><b>a</b><b>l</b></span
+          >
+          <span class="word"
+            ><b>J</b><b>u</b><b>m</b><b>p</b><b>i</b><b>n</b><b>g</b></span
+          >
+        </h1>
+        <p class="lede" data-i18n="hero.lede">
+          Elige tu animal, entra a una sala de hasta 25 y sobrevive ronda tras ronda de carreras
+          locas, suelos que desaparecen, bombas y lava que sube. Solo los mejores clasifican.
+          ¿Te llevas la corona?
+        </p>
+        <div class="cta">
+          <a class="btn btn-orange" href="#videos" data-i18n="hero.watch">▶ Ver gameplay</a>
+          <a class="btn btn-teal" href="#roadmap" data-i18n="hero.roadmap">Ver el roadmap</a>
+        </div>
+        <p class="note" data-i18n="hero.note">
+          Todo lo que ves aquí es del juego real: capturas y video grabados en partidas.
+        </p>
+      </div>
+      <div class="hero-stage">
+        <div class="tablet">
+          <video
+            class="tablet-video"
+            src="assets/video/hero.mp4"
+            poster="assets/img/candy-peak-4.webp"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <span class="rec">● REC · gameplay</span>
+        </div>
+        <img class="pop pop-1" src="assets/img/animal-elephant.webp" alt="" />
+        <img class="pop pop-2" src="assets/img/animal-penguin.webp" alt="" />
+        <img class="pop pop-3" src="assets/img/animal-cat.webp" alt="" />
+        <span class="coin coin-1" aria-hidden="true"></span>
+        <span class="coin coin-2" aria-hidden="true"></span>
+        <span class="coin coin-3" aria-hidden="true"></span>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="En números">
+      <div class="stat"><strong data-count="30">30</strong><span data-i18n="stats.rounds">rondas</span></div>
+      <div class="stat"><strong data-count="7">7</strong><span data-i18n="stats.modes">modos</span></div>
+      <div class="stat"><strong data-count="24">24</strong><span data-i18n="stats.animals">animales</span></div>
+      <div class="stat"><strong data-count="25">25</strong><span data-i18n="stats.players">por sala</span></div>
+      <div class="stat"><strong data-count="20">20</strong><span data-i18n="stats.achievements">logros</span></div>
+      <div class="stat"><strong>0</strong><span data-i18n="stats.ads">anuncios</span></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+    <section class="section what" id="juego">
+      <h2 class="section-title" data-i18n="what.title">¿Qué es Animal Jumping?</h2>
+      <div class="pillars">
+        <article class="pillar tilt-l">
+          <span class="pillar-icon">🏁</span>
+          <h3 data-i18n="what.p1.t">Rondas cortas y locas</h3>
+          <p data-i18n="what.p1.d">
+            1-2 minutos por ronda: corre, esquiva, empuja, recuerda, pinta o pasa la bomba. Cada
+            ronda es distinta y siempre hay revancha.
+          </p>
+        </article>
+        <article class="pillar tilt-r">
+          <span class="pillar-icon">🐾</span>
+          <h3 data-i18n="what.p2.t">Animales con personalidad</h3>
+          <p data-i18n="what.p2.d">
+            Los pesados aguantan empujones, los ligeros vuelan más lejos, los rápidos ganan
+            carreras. Cada uno tiene su habilidad.
+          </p>
+        </article>
+        <article class="pillar tilt-l">
+          <span class="pillar-icon">🤖</span>
+          <h3 data-i18n="what.p3.t">Siempre hay partida</h3>
+          <p data-i18n="what.p3.d">
+            Bots que corren, empujan, esquivan y recuerdan llenan la sala al instante: fácil, medio o
+            difícil. O juega con tus amigos en línea.
+          </p>
+        </article>
+        <article class="pillar tilt-r">
+          <span class="pillar-icon">💛</span>
+          <h3 data-i18n="what.p4.t">Justo y amigable</h3>
+          <p data-i18n="what.p4.d">
+            Sin anuncios y sin compras. Todo se gana jugando. Se juega sin conexión y funciona en
+            teléfonos modestos.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section modes" id="modos">
+      <h2 class="section-title" data-i18n="modes.title">7 modos de fiesta</h2>
+      <p class="section-lede" data-i18n="modes.lede">Pasa el cursor (o toca) para verlos en acción.</p>
+      <div class="mode-grid" id="modes"></div>
+    </section>
+
+    <section class="section rounds" id="rondas">
+      <h2 class="section-title" data-i18n="rounds.title">30 rondas</h2>
+      <div class="filters" id="filters" role="tablist" aria-label="Modo"></div>
+      <div class="round-grid" id="rounds"></div>
+    </section>
+
+    <section class="section videos" id="videos">
+      <h2 class="section-title" data-i18n="videos.title">Gameplay real</h2>
+      <p class="section-lede" data-i18n="videos.lede">
+        Grabado en el juego, sin montajes: 16 animales por sala, bots de dificultad media.
+      </p>
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+
+    <section class="section animals" id="animales">
+      <h2 class="section-title" data-i18n="animals.title">24 animales, cada uno distinto</h2>
+      <div class="animal-grid" id="animals"></div>
+    </section>
+
+    <section class="section features">
+      <h2 class="section-title" data-i18n="features.title">Todo lo que trae</h2>
+      <div class="feature-grid">
+        <article class="feature f-orange">
+          <h3 data-i18n="f.online.t">Salas en línea</h3>
+          <p data-i18n="f.online.d">
+            Crea una sala, comparte el código, un enlace o un QR. Salas públicas, de amigos o
+            privadas, e incluso en la misma Wi-Fi sin internet. Si el anfitrión se va, la sala sigue.
+          </p>
+        </article>
+        <article class="feature f-teal">
+          <h3 data-i18n="f.friends.t">Amigos</h3>
+          <p data-i18n="f.friends.d">
+            Código de amigo, quién está en línea y en qué sala, e invitaciones que aparecen al
+            instante. Expulsar, banear y bloquear para que nadie arruine la fiesta.
+          </p>
+        </article>
+        <article class="feature f-purple">
+          <h3 data-i18n="f.profile.t">Perfil y 20 logros</h3>
+          <p data-i18n="f.profile.d">
+            Tu nombre, tus estadísticas y 20 logros que pagan monedas: primera victoria, rachas,
+            el zoológico completo...
+          </p>
+          <div class="badges" id="badges"></div>
+        </article>
+        <article class="feature f-yellow">
+          <h3 data-i18n="f.shop.t">Tienda de estilo</h3>
+          <p data-i18n="f.shop.d">
+            10 sombreros, 8 bailes de victoria, 7 entradas, 7 estelas, 5 potenciadores y 4 mejoras.
+            Todo con monedas del juego.
+          </p>
+        </article>
+        <article class="feature f-sky">
+          <h3 data-i18n="f.cloud.t">Tu progreso donde vayas</h3>
+          <p data-i18n="f.cloud.d">
+            Juega como invitado en tu equipo, o inicia sesión con Google y lleva monedas, animales
+            y logros al celular, la PC y el navegador.
+          </p>
+        </article>
+        <article class="feature f-pink">
+          <h3 data-i18n="f.platforms.t">Donde quieras jugar</h3>
+          <p data-i18n="f.platforms.d">
+            Android (táctil y mando), Windows, macOS, Linux y navegador. Controles táctiles que
+            acomodas a tu gusto y soporte para mandos Bluetooth y USB.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="roadmap">
+      <h2 class="section-title" data-i18n="road.title">Roadmap</h2>
+      <p class="section-lede" data-i18n="road.lede">Lo que ya está, lo que viene y lo que soñamos.</p>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section class="section tech">
+      <h2 class="section-title" data-i18n="tech.title">Detrás de cámaras</h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <h3 data-i18n="tech.stack.t">Hecho con</h3>
+          <ul class="chips">
+            <li>React Three Fiber</li>
+            <li>Rapier physics</li>
+            <li>Tauri 2</li>
+            <li>Firebase</li>
+            <li>WebRTC P2P</li>
+            <li>Rust</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <h3 data-i18n="tech.qa.t">Probado a fondo</h3>
+          <ul class="facts">
+            <li data-i18n="tech.qa.1">Las 29 rondas jugadas de punta a punta contra 12 bots</li>
+            <li data-i18n="tech.qa.2">Salas de 6 jugadores con clasificación idéntica en cada equipo</li>
+            <li data-i18n="tech.qa.3">Tramposos de velocidad, suplantación e inundación: expulsados</li>
+            <li data-i18n="tech.qa.4">Una sala en línea cuesta menos de 1 centavo por hora</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <h3 data-i18n="tech.fair.t">Pensado para ti</h3>
+          <ul class="facts">
+            <li data-i18n="tech.fair.1">Sin anuncios, sin compras, sin rastreo</li>
+            <li data-i18n="tech.fair.2">Calidad automática: fluido en teléfonos modestos</li>
+            <li data-i18n="tech.fair.3">Tutorial de 2 minutos: Paw Academy</li>
+            <li data-i18n="tech.fair.4">Modelos 3D de Kenney (CC0)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <h2 class="section-title" data-i18n="faq.title">Preguntas</h2>
+      <details>
+        <summary data-i18n="faq.q1">¿Cuándo sale?</summary>
+        <p data-i18n="faq.a1">
+          Está en pruebas. La versión para Android llegará a Google Play después de la prueba
+          cerrada; mira el roadmap para ver en qué punto va.
+        </p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q2">¿Es gratis? ¿Tiene compras?</summary>
+        <p data-i18n="faq.a2">
+          No tiene anuncios ni compras dentro del juego. Todo se desbloquea jugando.
+        </p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">¿Necesito internet?</summary>
+        <p data-i18n="faq.a3">
+          No: contra bots se juega sin conexión, y hay salas en la misma Wi-Fi sin internet. Las
+          salas por internet y el guardado en la nube son opcionales.
+        </p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q4">¿Puedo jugar con mis amigos?</summary>
+        <p data-i18n="faq.a4">
+          Sí: crea una sala y comparte el código, el enlace o el QR, o invítalos desde tu lista de
+          amigos. Hasta 25 animales por sala; los bots llenan los huecos.
+        </p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q5">¿Es apto para niños?</summary>
+        <p data-i18n="faq.a5">
+          Sí: solo golpes de caricatura y caídas, sin chat, sin anuncios y sin compras.
+        </p>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <img src="assets/img/animal-bunny.webp" alt="" width="72" height="72" />
+      <p data-i18n="footer.line">¡Elige tu animal favorito y empieza a saltar!</p>
+      <p class="small" data-i18n="footer.credits">
+        Animal Jumping · Modelos 3D de Kenney (CC0) · Hecho con cariño y muchos saltos.
+      </p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Cerrar">✕</button>
+      <video id="lightboxVideo" controls playsinline></video>
+      <p id="lightboxCaption"></p>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

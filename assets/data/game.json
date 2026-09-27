@@ -1,0 +1,568 @@
+{
+ "levels": [
+  {
+   "id": "paw-academy",
+   "name": "Paw Academy",
+   "tagline": "A quick practice course: walk, jump, sprint, climb and dodge. No rush, no rivals!",
+   "mode": "race",
+   "label": "Tutorial",
+   "tutorial": true
+  },
+  {
+   "id": "candy-peak",
+   "name": "Candy Peak Rush",
+   "tagline": "Six sections, five checkpoints, one candy summit. Race to the top!",
+   "mode": "race",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "tumble-tower",
+   "name": "Tumble Tower",
+   "tagline": "Find the hole on every floor and drop all the way to the bottom. Fastest wins!",
+   "mode": "race",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "speedway",
+   "name": "Speedway Scramble",
+   "tagline": "Race the pack around the beach track. Hit the boost pads - only half qualify!",
+   "mode": "race",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "hex-tumble",
+   "name": "Hex Tumble",
+   "tagline": "Tiles vanish under your feet. Keep moving, drop layer to layer, survive 45 seconds!",
+   "mode": "survival",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "perfect-match",
+   "name": "Perfect Match",
+   "tagline": "Memorise the symbols, then stand on the one the sign shows before the rest sink!",
+   "mode": "memory",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "sweeper-showdown",
+   "name": "Sweeper Showdown",
+   "tagline": "Two bars spin faster and faster while the ice shrinks. Survive 60 seconds!",
+   "mode": "survival",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "coin-frenzy",
+   "name": "Coin Frenzy",
+   "tagline": "Grab 25 coins in 60 seconds. They respawn - bumpers and springs help (or not)!",
+   "mode": "collect",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "hedge-maze",
+   "name": "Hedge Maze",
+   "tagline": "Two mazes, one plaza of sweepers between them. Charge the chest walls for shortcuts!",
+   "mode": "race",
+   "label": "Maze race",
+   "tutorial": false
+  },
+  {
+   "id": "door-dash",
+   "name": "Door Dash",
+   "tagline": "Some doors burst open, some bounce you back. Pick fast - fewer real doors every row!",
+   "mode": "race",
+   "label": "Lucky doors",
+   "tutorial": false
+  },
+  {
+   "id": "doodle-derby",
+   "name": "Doodle Derby",
+   "tagline": "Run over the floor to paint it your color. Trace the gold doodle for triple points!",
+   "mode": "paint",
+   "label": "Paint party",
+   "tutorial": false
+  },
+  {
+   "id": "tip-toe-trail",
+   "name": "Tip Toe Trail",
+   "tagline": "Only a hidden path of tiles is real. Watch who falls, follow who doesn’t!",
+   "mode": "race",
+   "label": "Hidden path",
+   "tutorial": false
+  },
+  {
+   "id": "crown-clash",
+   "name": "Crown Clash",
+   "tagline": "Stand in the crown zone to score. It hops every 10s - first to 30 crown seconds!",
+   "mode": "zone",
+   "label": "King of the hill",
+   "tutorial": false
+  },
+  {
+   "id": "bomb-bash",
+   "name": "Bomb Bash",
+   "tagline": "Holding a bomb? Tag someone before it blows! Three fuses - last ones standing win.",
+   "mode": "tag",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "lava-rising",
+   "name": "Lava Rising",
+   "tagline": "The lava is rising! Hop up the spiral steps and hold the summit for 70 seconds.",
+   "mode": "survival",
+   "label": "Rising lava",
+   "tutorial": false
+  },
+  {
+   "id": "wall-rush",
+   "name": "Wall Rush",
+   "tagline": "Walls sweep the platform - slip through the gaps or get shoved off. Survive 60s!",
+   "mode": "survival",
+   "label": "Dodge",
+   "tutorial": false
+  },
+  {
+   "id": "midnight-match",
+   "name": "Midnight Match",
+   "tagline": "Perfect Match after dark: a bigger board, six rounds, and barely any time to look.",
+   "mode": "memory",
+   "label": "Memory+",
+   "tutorial": false
+  },
+  {
+   "id": "candy-factory",
+   "name": "Candy Factory",
+   "tagline": "Grab 30 coins off the belts, the spinners and the candy tower in 60 seconds!",
+   "mode": "collect",
+   "label": null,
+   "tutorial": false
+  },
+  {
+   "id": "gauntlet",
+   "name": "The Gauntlet",
+   "tagline": "Six obstacle stations back to back - doors, wrecking balls, a sweeper, bumpers. Run it!",
+   "mode": "race",
+   "label": "Obstacles",
+   "tutorial": false
+  },
+  {
+   "id": "color-rush",
+   "name": "Colour Rush",
+   "tagline": "Stand on the colour the sign SAYS - not the colour it is written in. Think fast!",
+   "mode": "memory",
+   "label": "Brain",
+   "tutorial": false
+  },
+  {
+   "id": "hop-skip",
+   "name": "Hop Skip",
+   "tagline": "No floor, only stepping stones - hop your way across three stretches to the finish!",
+   "mode": "race",
+   "label": "Jump race",
+   "tutorial": false
+  },
+  {
+   "id": "potato-party",
+   "name": "Potato Party",
+   "tagline": "Tiny arena, belts round the edge, bombs for almost half the lobby. Pass it on!",
+   "mode": "tag",
+   "label": "Hot potato",
+   "tutorial": false
+  },
+  {
+   "id": "splat-arena",
+   "name": "Splat Arena",
+   "tagline": "A bigger canvas, two sweepers, two gold doodles. Paint the most before the buzzer!",
+   "mode": "paint",
+   "label": "Paint party",
+   "tutorial": false
+  },
+  {
+   "id": "jump-club",
+   "name": "Jump Club",
+   "tagline": "Jump the spinning bar every time it comes round - it only gets faster. Survive 60s!",
+   "mode": "survival",
+   "label": "Jump",
+   "tutorial": false
+  },
+  {
+   "id": "odd-one-out",
+   "name": "Odd One Out",
+   "tagline": "Remember the board, then stand where the sign’s symbol was NOT. Most tiles had it!",
+   "mode": "memory",
+   "label": "Brain",
+   "tutorial": false
+  },
+  {
+   "id": "spike-sprint",
+   "name": "Spike Sprint",
+   "tagline": "A corridor of pop-up spikes. Read the rhythm - stop, go, stop - and sprint to the end!",
+   "mode": "race",
+   "label": "Obstacles",
+   "tutorial": false
+  },
+  {
+   "id": "crown-tower",
+   "name": "Crown Tower",
+   "tagline": "The crown hops between three towers and the floor every 8s. Climb, drop, shove - 30s wins!",
+   "mode": "zone",
+   "label": "King of the hill",
+   "tutorial": false
+  },
+  {
+   "id": "sumo-smash",
+   "name": "Sumo Smash",
+   "tagline": "Bumpers everywhere and the ring is shrinking. Shove, bounce, survive 50 seconds!",
+   "mode": "survival",
+   "label": "Sumo",
+   "tutorial": false
+  },
+  {
+   "id": "tip-toe-towers",
+   "name": "Tip Toe Towers",
+   "tagline": "Three hidden-path grids, each trickier than the last. Trust the mint tiles!",
+   "mode": "race",
+   "label": "Hidden path",
+   "tutorial": false
+  },
+  {
+   "id": "door-dash-deluxe",
+   "name": "Door Dash Deluxe",
+   "tagline": "Seven rows of lucky doors, down to one real door of three. Trouble in every gap!",
+   "mode": "race",
+   "label": "Lucky doors",
+   "tutorial": false
+  }
+ ],
+ "animals": [
+  {
+   "id": "beaver",
+   "name": "Beaver",
+   "title": "Busy Builder",
+   "rarity": "rare",
+   "price": 300,
+   "ability": "sturdy"
+  },
+  {
+   "id": "bee",
+   "name": "Bee",
+   "title": "Buzzer",
+   "rarity": "common",
+   "price": 180,
+   "ability": "floaty"
+  },
+  {
+   "id": "bunny",
+   "name": "Bunny",
+   "title": "Hop Star",
+   "rarity": "starter",
+   "price": 0,
+   "ability": "springy"
+  },
+  {
+   "id": "cat",
+   "name": "Cat",
+   "title": "Nine Lives",
+   "rarity": "common",
+   "price": 150,
+   "ability": "quickRecover"
+  },
+  {
+   "id": "caterpillar",
+   "name": "Caterpillar",
+   "title": "Wiggle Worm",
+   "rarity": "common",
+   "price": 150,
+   "ability": "grippy"
+  },
+  {
+   "id": "chick",
+   "name": "Chick",
+   "title": "Fluff Ball",
+   "rarity": "starter",
+   "price": 0,
+   "ability": "floaty"
+  },
+  {
+   "id": "cow",
+   "name": "Cow",
+   "title": "Moo-ver",
+   "rarity": "epic",
+   "price": 500,
+   "ability": "shover"
+  },
+  {
+   "id": "crab",
+   "name": "Crab",
+   "title": "Hard Shell",
+   "rarity": "rare",
+   "price": 320,
+   "ability": "quickRecover"
+  },
+  {
+   "id": "deer",
+   "name": "Deer",
+   "title": "Graceful Leaper",
+   "rarity": "common",
+   "price": 200,
+   "ability": "springy"
+  },
+  {
+   "id": "dog",
+   "name": "Dog",
+   "title": "Good Boy",
+   "rarity": "starter",
+   "price": 0,
+   "ability": "forgiving"
+  },
+  {
+   "id": "elephant",
+   "name": "Elephant",
+   "title": "Big Stomp",
+   "rarity": "legendary",
+   "price": 800,
+   "ability": "juggernaut"
+  },
+  {
+   "id": "fish",
+   "name": "Fish",
+   "title": "Slippery Streak",
+   "rarity": "rare",
+   "price": 320,
+   "ability": "sprinter"
+  },
+  {
+   "id": "fox",
+   "name": "Fox",
+   "title": "The All-Rounder",
+   "rarity": "starter",
+   "price": 0,
+   "ability": "allRounder"
+  },
+  {
+   "id": "giraffe",
+   "name": "Giraffe",
+   "title": "Long Neck",
+   "rarity": "rare",
+   "price": 350,
+   "ability": "forgiving"
+  },
+  {
+   "id": "hog",
+   "name": "Hog",
+   "title": "Tusk Charger",
+   "rarity": "epic",
+   "price": 500,
+   "ability": "shover"
+  },
+  {
+   "id": "koala",
+   "name": "Koala",
+   "title": "Cuddly Clinger",
+   "rarity": "common",
+   "price": 150,
+   "ability": "forgiving"
+  },
+  {
+   "id": "lion",
+   "name": "Lion",
+   "title": "The King",
+   "rarity": "legendary",
+   "price": 800,
+   "ability": "lucky"
+  },
+  {
+   "id": "monkey",
+   "name": "Monkey",
+   "title": "Treetop Grabber",
+   "rarity": "common",
+   "price": 200,
+   "ability": "magnet"
+  },
+  {
+   "id": "panda",
+   "name": "Panda",
+   "title": "Bamboo Bulk",
+   "rarity": "rare",
+   "price": 350,
+   "ability": "sturdy"
+  },
+  {
+   "id": "parrot",
+   "name": "Parrot",
+   "title": "Sky Chatter",
+   "rarity": "rare",
+   "price": 300,
+   "ability": "floaty"
+  },
+  {
+   "id": "penguin",
+   "name": "Penguin",
+   "title": "Belly Slider",
+   "rarity": "common",
+   "price": 180,
+   "ability": "sprinter"
+  },
+  {
+   "id": "pig",
+   "name": "Pig",
+   "title": "Piggy Bank",
+   "rarity": "common",
+   "price": 150,
+   "ability": "lucky"
+  },
+  {
+   "id": "polar",
+   "name": "Polar Bear",
+   "title": "Ice Titan",
+   "rarity": "epic",
+   "price": 550,
+   "ability": "sturdy"
+  },
+  {
+   "id": "tiger",
+   "name": "Tiger",
+   "title": "Stripe Streak",
+   "rarity": "epic",
+   "price": 550,
+   "ability": "sprinter"
+  }
+ ],
+ "achievements": [
+  {
+   "title": "Paw Academy Graduate",
+   "description": "Finish the tutorial.",
+   "icon": "🎓",
+   "reward": 50
+  },
+  {
+   "title": "Off We Hop",
+   "description": "Play your first round.",
+   "icon": "🐾",
+   "reward": 20
+  },
+  {
+   "title": "Regular",
+   "description": "Play 100 rounds.",
+   "icon": "📅",
+   "reward": 250
+  },
+  {
+   "title": "Made the Cut",
+   "description": "Qualify in a round.",
+   "icon": "✅",
+   "reward": 30
+  },
+  {
+   "title": "Consistent",
+   "description": "Qualify 25 times.",
+   "icon": "🎯",
+   "reward": 150
+  },
+  {
+   "title": "Unstoppable",
+   "description": "Qualify 100 times.",
+   "icon": "🚀",
+   "reward": 400
+  },
+  {
+   "title": "Crowned",
+   "description": "Win a round against bots.",
+   "icon": "👑",
+   "reward": 60
+  },
+  {
+   "title": "Champion",
+   "description": "Win 10 rounds against bots.",
+   "icon": "🏆",
+   "reward": 200
+  },
+  {
+   "title": "Legend",
+   "description": "Win 50 rounds against bots.",
+   "icon": "🌟",
+   "reward": 600
+  },
+  {
+   "title": "Podium Regular",
+   "description": "Finish in the top 3 ten times.",
+   "icon": "🥉",
+   "reward": 150
+  },
+  {
+   "title": "Bot Tamer",
+   "description": "Win a round against hard bots.",
+   "icon": "🤖",
+   "reward": 250
+  },
+  {
+   "title": "On a Roll",
+   "description": "Qualify 5 rounds in a row.",
+   "icon": "🔥",
+   "reward": 120
+  },
+  {
+   "title": "Hot Streak",
+   "description": "Qualify 10 rounds in a row.",
+   "icon": "☄️",
+   "reward": 300
+  },
+  {
+   "title": "Coin Hopper",
+   "description": "Pick up 500 coins in rounds.",
+   "icon": "🪙",
+   "reward": 60
+  },
+  {
+   "title": "Coin Magnet",
+   "description": "Pick up 5,000 coins in rounds.",
+   "icon": "💰",
+   "reward": 300
+  },
+  {
+   "title": "Piggy Bank Hero",
+   "description": "Earn 10,000 coins in total.",
+   "icon": "🐷",
+   "reward": 400
+  },
+  {
+   "title": "World Tour",
+   "description": "Qualify in every round at least once.",
+   "icon": "🗺️",
+   "reward": 800
+  },
+  {
+   "title": "Animal Friends",
+   "description": "Own 5 animals.",
+   "icon": "🦊",
+   "reward": 150
+  },
+  {
+   "title": "Full Zoo",
+   "description": "Own every animal.",
+   "icon": "🦁",
+   "reward": 1000
+  },
+  {
+   "title": "Trendsetter",
+   "description": "Buy 5 hats, emotes, entrances or trails.",
+   "icon": "🎩",
+   "reward": 120
+  }
+ ],
+ "counts": {
+  "hats": 10,
+  "boosts": 5,
+  "upgrades": 4,
+  "emotes": 8,
+  "entrances": 7,
+  "trails": 7
+ }
+}
